@@ -20,10 +20,10 @@ const galleryElement = galleryItems
 .join("");
 
 ContainGallery.insertAdjacentHTML("afterbegin", galleryElement);
-ContainGallery.addEventListener("click", (event) => {
-    event.preventDefault();
-    var lightbox = new SimpleLightbox('.gallery a', { 
+ContainGallery.addEventListener("click", (event) => 
+    event.preventDefault())
+    let lightbox = new SimpleLightbox('.gallery a', { 
         captionData: "alt",
         captionDelay: 250,
     
-})});
+});
